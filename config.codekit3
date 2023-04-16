@@ -464,6 +464,14 @@
       "oAP" : "\/dev\/content\/middle-black-cards.html",
       "oF" : 0
     },
+    "\/dev\/content\/middle-images.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/middle-images.html",
+      "oF" : 0
+    },
     "\/dev\/content\/search-bar.kit" : {
       "cB" : 0,
       "ft" : 2048,

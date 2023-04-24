@@ -424,15 +424,6 @@ textarea {
 /* =============
     Middle Images
 ============= */
-#middle-images {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". middle-images .";
-}
-#middle-images > div {
-  grid-area: middle-images;
-}
-
 /* =============
     Search Bar
 ============= */

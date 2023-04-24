@@ -327,6 +327,10 @@ template {
 /* =============
     Base
 ============= */
+.large-images {
+  width: 100%;
+}
+
 /* =============
     Typography
 ============= */
@@ -381,15 +385,6 @@ textarea {
 /* =============
     Hero
 ============= */
-#hero {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". hero .";
-}
-#hero > div {
-  grid-area: hero;
-}
-
 /* =============
     Banner
 ============= */

@@ -369,21 +369,83 @@ textarea {
 /* =============
     Footer
 ============= */
+#footer {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
+}
+#footer > div {
+  grid-area: footer;
+}
+
 /* =============
     Hero
 ============= */
+#hero {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hero .";
+}
+#hero > div {
+  grid-area: hero;
+}
+
 /* =============
     Banner
 ============= */
+#banner {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". banner .";
+}
+#banner > div {
+  grid-area: banner;
+}
+
 /* =============
     Cards
 ============= */
+#cards {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". cards .";
+}
+#cards > div {
+  grid-area: cards;
+}
+
 /* =============
     Middle Black Cards
 ============= */
+#middle-black-cards {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". middle-black-cards .";
+}
+#middle-black-cards > div {
+  grid-area: middle-black-cards;
+}
+
 /* =============
     Middle Images
 ============= */
+#middle-images {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". middle-images .";
+}
+#middle-images > div {
+  grid-area: middle-images;
+}
+
 /* =============
     Search Bar
 ============= */
+#search-bar {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". search-bar .";
+}
+#search-bar > div {
+  grid-area: search-bar;
+}

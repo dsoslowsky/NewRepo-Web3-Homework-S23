@@ -3,5 +3,11 @@
 ============= */
 
 #middle-black-cards{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". middle-black-cards .";
 
+    >div{
+        grid-area: middle-black-cards;
+    }
 }

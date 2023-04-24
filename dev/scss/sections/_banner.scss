@@ -3,5 +3,11 @@
 ============= */
 
 #banner{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". banner .";
 
+    >div{
+        grid-area: banner;
+    }
 }

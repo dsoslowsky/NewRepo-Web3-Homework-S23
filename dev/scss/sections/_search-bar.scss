@@ -3,5 +3,11 @@
 ============= */
 
 #search-bar{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". search-bar .";
 
+    >div{
+        grid-area: search-bar;
+    }
 }

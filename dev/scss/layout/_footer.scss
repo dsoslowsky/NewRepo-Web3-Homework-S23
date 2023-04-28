@@ -3,4 +3,29 @@
 ============= */
 
 #footer{
+
+    @include md{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "f1 f2"
+        "f1 f3";
+    }
+
+    @include xl{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "f1 f2 f3";
+    }
+
+    #f1{
+        grid-area: f1;
+    }
+    #f2{
+        grid-area: f2;
+    }
+    #f3{
+        grid-area: f3;
+    }
 }

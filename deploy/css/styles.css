@@ -373,6 +373,30 @@ textarea {
 /* =============
     Footer
 ============= */
+@media (min-width: 768px) {
+  #footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "f1 f2" "f1 f3";
+  }
+}
+@media (min-width: 1200px) {
+  #footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "f1 f2 f3";
+  }
+}
+#footer #f1 {
+  grid-area: f1;
+}
+#footer #f2 {
+  grid-area: f2;
+}
+#footer #f3 {
+  grid-area: f3;
+}
+
 /* =============
     Hero
 ============= */
@@ -387,6 +411,24 @@ textarea {
 #banner > div {
   grid-area: banner;
 }
+#banner > div ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 24px;
+}
+@media (min-width: 768px) {
+  #banner > div ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+#banner > div ul li {
+  list-style: none;
+  background-color: cyan;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
 
 /* =============
     Cards
@@ -398,6 +440,45 @@ textarea {
 }
 #cards > div {
   grid-area: cards;
+}
+#cards > div ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 24px;
+}
+@media (min-width: 768px) {
+  #cards > div ul {
+    grid-template-columns: repeat 4, 1fr;
+    grid-template-areas: "c1 c1 c2 c2" "c3 c3 c4 c4" ". c5 c5 .";
+  }
+}
+@media (min-width: 1200px) {
+  #cards > div ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+#cards > div ul li {
+  list-style: none;
+  background-color: lightcoral;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+#cards > div ul #c1 {
+  grid-area: c1;
+}
+#cards > div ul #c2 {
+  grid-area: c2;
+}
+#cards > div ul #c3 {
+  grid-area: c3;
+}
+#cards > div ul #c4 {
+  grid-area: c4;
+}
+#cards > div ul #c5 {
+  grid-area: c5;
 }
 
 /* =============
@@ -411,10 +492,64 @@ textarea {
 #middle-black-cards > div {
   grid-area: middle-black-cards;
 }
+#middle-black-cards > div ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 24px;
+}
+@media (min-width: 768px) {
+  #middle-black-cards > div ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+#middle-black-cards > div ul li {
+  list-style: none;
+  background-color: lime;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
 
 /* =============
     Middle Images
 ============= */
+#middle-images {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". middle-images .";
+}
+#middle-images > div {
+  grid-area: middle-images;
+}
+#middle-images > div ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+@media (min-width: 768px) {
+  #middle-images > div ul {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "i1 i2";
+  }
+}
+#middle-images > div ul li {
+  list-style: none;
+  background-color: lightblue;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#middle-images > div ul #i1 {
+  grid-area: i1;
+}
+#middle-images > div ul #i2 {
+  grid-area: i2;
+}
+#middle-images > div ul #i3 {
+  grid-area: i3;
+}
+
 /* =============
     Search Bar
 ============= */

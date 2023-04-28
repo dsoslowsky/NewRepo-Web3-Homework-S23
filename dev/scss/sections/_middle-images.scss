@@ -3,4 +3,42 @@
 ============= */
 
 #middle-images{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". middle-images .";
+
+
+    >div{
+        grid-area: middle-images;
+
+        ul{
+            margin: 0;
+            padding: 0;
+            display: grid;
+
+            @include md{
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas: 
+                "i1 i2";
+            }
+
+            li{
+                list-style: none;
+                background-color: lightblue;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                text-align: center;
+            }
+
+            #i1{
+                grid-area: i1;
+            }
+            #i2{
+                grid-area: i2;
+            }
+            #i3{
+                grid-area: i3;
+            }
+        }
+    }
 }

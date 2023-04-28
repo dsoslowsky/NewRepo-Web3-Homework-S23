@@ -387,6 +387,9 @@ textarea {
     grid-template-areas: "f1 f2 f3";
   }
 }
+#footer li {
+  list-style-type: none;
+}
 #footer #f1 {
   grid-area: f1;
 }

@@ -537,6 +537,12 @@ textarea {
     grid-template-areas: "i1 i2" ". i3";
   }
 }
+@media (min-width: 1440px) {
+  #middle-images > div ul {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "i1 i1 i2" "i1 i1 i3";
+  }
+}
 #middle-images > div ul li {
   list-style: none;
   background-color: lightblue;

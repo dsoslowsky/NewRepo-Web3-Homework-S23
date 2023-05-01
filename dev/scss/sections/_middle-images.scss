@@ -23,6 +23,13 @@
                 ". i3";
             }
 
+            @include xxl{
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas: 
+                "i1 i1 i2"
+                "i1 i1 i3";
+            }
+
             li{
                 list-style: none;
                 background-color: lightblue;

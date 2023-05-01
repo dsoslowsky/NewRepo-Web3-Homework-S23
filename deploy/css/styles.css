@@ -335,6 +335,38 @@ template {
 #header-footer-grid > div {
   grid-area: header-footer;
 }
+#header-footer-grid > div ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 24px;
+}
+@media (min-width: 768px) {
+  #header-footer-grid > div ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "f1 f2" "f1 f3";
+  }
+}
+@media (min-width: 1200px) {
+  #header-footer-grid > div ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "f1 f2 f3";
+  }
+}
+#header-footer-grid > div li {
+  list-style-type: none;
+}
+#header-footer-grid > div #f1 {
+  grid-area: f1;
+}
+#header-footer-grid > div #f2 {
+  grid-area: f2;
+}
+#header-footer-grid > div #f3 {
+  grid-area: f3;
+}
 
 .large-images {
   width: 100%;
@@ -373,15 +405,21 @@ textarea {
 /* =============
     Footer
 ============= */
+#footer ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 24px;
+}
 @media (min-width: 768px) {
-  #footer {
+  #footer ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "f1 f2" "f1 f3";
   }
 }
 @media (min-width: 1200px) {
-  #footer {
+  #footer ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "f1 f2 f3";
@@ -539,6 +577,8 @@ textarea {
 }
 @media (min-width: 1440px) {
   #middle-images > div ul {
+    display: grid;
+    grid-template-columns: auto 1440px auto;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "i1 i1 i2" "i1 i1 i3";
   }

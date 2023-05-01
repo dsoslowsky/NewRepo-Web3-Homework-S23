@@ -8,8 +8,47 @@
     grid-template-areas: ". header-footer .";
 
     >div{
+            ul{
+         margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 24px;
+
+       
+        @include md{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            "f1 f2"
+            "f1 f3";
+        }
+    
+        @include xl{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+            "f1 f2 f3";
+        }
+
+    }
+    li{
+        list-style-type: none;
+        
+    }
+
+    #f1{
+        grid-area: f1;
+    }
+    #f2{
+        grid-area: f2;
+    }
+    #f3{
+        grid-area: f3;
+    }
         grid-area: header-footer;
     } 
+
+    
 }
 
 

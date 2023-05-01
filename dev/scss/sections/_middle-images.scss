@@ -16,6 +16,7 @@
             padding: 0;
             display: grid;
 
+           
             @include md{
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-areas: 
@@ -24,6 +25,8 @@
             }
 
             @include xxl{
+                display: grid;
+                grid-template-columns: auto 1440px auto;
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-areas: 
                 "i1 i1 i2"

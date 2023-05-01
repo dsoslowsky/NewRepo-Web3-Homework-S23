@@ -413,7 +413,7 @@ textarea {
 ============= */
 #banner {
   display: grid;
-  grid-template-columns: 16px auto 16px;
+  grid-template-columns: 0px auto 0px;
   grid-template-areas: ". banner .";
 }
 #banner > div {
@@ -423,7 +423,6 @@ textarea {
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 24px;
 }
 @media (min-width: 768px) {
   #banner > div ul {
@@ -505,7 +504,6 @@ textarea {
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 24px;
 }
 @media (min-width: 768px) {
   #middle-black-cards > div ul {

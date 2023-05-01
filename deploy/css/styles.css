@@ -458,7 +458,8 @@ textarea {
 }
 @media (min-width: 1200px) {
   #cards > div ul {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "c1 c1 c2 c2 c3 c3" ". c4 c4 c5 c5 .";
   }
 }
 #cards > div ul li {
@@ -533,7 +534,7 @@ textarea {
 @media (min-width: 768px) {
   #middle-images > div ul {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "i1 i2";
+    grid-template-areas: "i1 i2" ". i3";
   }
 }
 #middle-images > div ul li {

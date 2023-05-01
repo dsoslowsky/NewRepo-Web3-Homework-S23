@@ -24,7 +24,10 @@
             }
 
             @include xl{
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-areas: 
+                "c1 c1 c2 c2 c3 c3"
+                ". c4 c4 c5 c5 .";
             }
 
             li{

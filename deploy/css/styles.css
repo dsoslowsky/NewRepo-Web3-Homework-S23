@@ -405,39 +405,6 @@ textarea {
 /* =============
     Footer
 ============= */
-#footer ul {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 24px;
-}
-@media (min-width: 768px) {
-  #footer ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "f1 f2" "f1 f3";
-  }
-}
-@media (min-width: 1200px) {
-  #footer ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "f1 f2 f3";
-  }
-}
-#footer li {
-  list-style-type: none;
-}
-#footer #f1 {
-  grid-area: f1;
-}
-#footer #f2 {
-  grid-area: f2;
-}
-#footer #f3 {
-  grid-area: f3;
-}
-
 /* =============
     Hero
 ============= */
@@ -558,7 +525,7 @@ textarea {
 ============= */
 #middle-images {
   display: grid;
-  grid-template-columns: 16px auto 16px;
+  grid-template-columns: 0px auto 0px;
   grid-template-areas: ". middle-images .";
 }
 #middle-images > div {

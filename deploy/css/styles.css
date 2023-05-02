@@ -436,6 +436,11 @@ footer > div > ul li {
   grid-template-columns: 0px auto 0px;
   grid-template-areas: ". banner .";
 }
+@media (min-width: 1440px) {
+  #banner {
+    grid-template-columns: auto 1440px auto;
+  }
+}
 #banner > div {
   grid-area: banner;
 }
@@ -455,6 +460,8 @@ footer > div > ul li {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
+  display: grid;
+  grid-template-columns: 50% auto;
 }
 
 /* =============
@@ -464,6 +471,11 @@ footer > div > ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". cards .";
+}
+@media (min-width: 1440px) {
+  #cards {
+    grid-template-columns: auto 1440px auto;
+  }
 }
 #cards > div {
   grid-area: cards;

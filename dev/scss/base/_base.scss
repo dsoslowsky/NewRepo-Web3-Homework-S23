@@ -6,3 +6,10 @@
 .large-images{
     width:100%;
 }
+
+.show-extra-large{
+    display: none;
+    @include xxl{
+        display: block;
+    }
+    }

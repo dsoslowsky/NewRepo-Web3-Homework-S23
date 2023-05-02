@@ -331,6 +331,15 @@ template {
   width: 100%;
 }
 
+.show-extra-large {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .show-extra-large {
+    display: block;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -451,7 +460,12 @@ footer > div > ul li {
 }
 @media (min-width: 768px) {
   #banner > div ul {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 40% auto;
+  }
+}
+@media (min-width: 1024px) {
+  #banner > div ul {
+    grid-template-columns: 50% auto;
   }
 }
 #banner > div ul li {

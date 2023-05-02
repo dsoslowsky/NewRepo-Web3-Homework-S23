@@ -10,6 +10,8 @@
 
     >div{
         grid-area: middle-images;
+        padding-top: 20px;
+        padding-bottom: 20px;
 
         ul{
             margin: 0;
@@ -36,19 +38,28 @@
             li{
                 list-style: none;
                 background-color: lightblue;
-                padding-top: 20px;
-                padding-bottom: 20px;
                 text-align: center;
+                img{
+                    width: 100%;
+                    border: 1px solid red;
+                }
             }
 
             #i1{
-                grid-area: i1;
+                @include md {
+                    grid-area: i1;
+                }
+               
             }
             #i2{
-                grid-area: i2;
+                @include md {
+                    grid-area: i2;
+                }
             }
             #i3{
-                grid-area: i3;
+                @include md {
+                    grid-area: i3;
+                }
             }
         }
     }

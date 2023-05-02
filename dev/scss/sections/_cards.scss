@@ -39,19 +39,29 @@
             }
 
             #c1{
-                grid-area: c1;
+                @include md{
+                    grid-area: c1;
+                }
             }
             #c2{
-                grid-area: c2;
+                @include md{
+                    grid-area: c2;
+                }
             }
             #c3{
-                grid-area: c3;
+                @include md{
+                    grid-area: c3;
+                }
             }
             #c4{
-                grid-area: c4;
+                @include md{
+                    grid-area: c4;
+                }
             }
             #c5{
-                grid-area: c5;
+                @include md{
+                    grid-area: c5;
+                }
             }
         }
         

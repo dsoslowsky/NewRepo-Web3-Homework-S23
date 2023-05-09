@@ -13,6 +13,11 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --off-white: #F1EEEE;
+  --off-black: #161616;
+  --red: #A33327;
+  --green: #689775;
+  --dark-green: #51755B;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -349,6 +354,10 @@ template {
   }
 }
 
+.green-card {
+  background-color: var(--green);
+}
+
 /* =============
     Typography
 ============= */
@@ -479,12 +488,15 @@ footer > div > ul li {
 }
 #banner > div ul li {
   list-style: none;
-  background-color: cyan;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
   display: grid;
   grid-template-columns: 50% auto;
+  background-color: var(--dark-green);
+}
+#banner > div ul li button {
+  background-color: transparent;
 }
 
 /* =============

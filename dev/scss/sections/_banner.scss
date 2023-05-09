@@ -31,13 +31,19 @@
 
             li{
                 list-style: none;
-                background-color: cyan;
                 padding-top: 20px;
                 padding-bottom: 20px;
                 text-align: center;
                 display: grid;
                 grid-template-columns: 50% auto;
+                
+                button{
+                    background-color: transparent;
+                }
+
+                background-color: var(--dark-green);
             }
         }
     }
 }
+

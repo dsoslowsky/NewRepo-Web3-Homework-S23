@@ -345,6 +345,10 @@ ul li {
   margin: 0;
 }
 
+button {
+  margin: 4px 12px;
+}
+
 .large-images {
   width: 100%;
 }

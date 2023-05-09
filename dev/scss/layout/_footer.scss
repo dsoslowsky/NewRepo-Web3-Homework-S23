@@ -46,10 +46,12 @@ footer{
             list-style-type: none;
 
             form{
-                button{
-                    background-color: var(--green);
-                    color: var(--off-white);
-                }
+                background-color: var(--red);
+                color:var(--off-white);
+            }
+            button{
+                background-color: var(--green);
+                color: var(--off-white);
             }
         }
     

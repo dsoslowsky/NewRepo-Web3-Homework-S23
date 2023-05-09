@@ -444,7 +444,11 @@ footer > div > ul {
 footer > div > ul li {
   list-style-type: none;
 }
-footer > div > ul li form button {
+footer > div > ul li form {
+  background-color: var(--red);
+  color: var(--off-white);
+}
+footer > div > ul li button {
   background-color: var(--green);
   color: var(--off-white);
 }

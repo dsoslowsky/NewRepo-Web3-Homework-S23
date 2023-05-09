@@ -23,6 +23,7 @@ footer{
             >ul{
             margin: 0;
             padding: 0;
+            padding-bottom: 40px;
             display: grid;
             gap: 24px;
 
@@ -52,6 +53,10 @@ footer{
             button{
                 background-color: var(--green);
                 color: var(--off-white);
+            }
+
+            aside{
+                display: flex;
             }
         }
     

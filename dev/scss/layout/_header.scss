@@ -9,9 +9,21 @@
 
     background-color: var(--off-black);
 
+    padding: 20px 24px;
+
+    @include md{
+        padding: 24px 24px;
+    }
+
+    @include lg{
+        padding: 24px 48px;
+    }
+
     >div{
         grid-area: header;
 
         color: var(--off-white);
+
+        display: flex;
     }
 }

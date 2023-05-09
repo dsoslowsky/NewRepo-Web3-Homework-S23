@@ -336,6 +336,15 @@ body {
   background-color: var(--off-white);
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  padding: 0;
+  margin: 0;
+}
+
 .large-images {
   width: 100%;
 }
@@ -398,6 +407,10 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
 }
 
+.padding-p p {
+  padding: 16px;
+}
+
 /* =============
     Buttons
 ============= */
@@ -430,10 +443,22 @@ textarea {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
   background-color: var(--off-black);
+  padding: 20px 24px;
+}
+@media (min-width: 768px) {
+  #header {
+    padding: 24px 24px;
+  }
+}
+@media (min-width: 1024px) {
+  #header {
+    padding: 24px 48px;
+  }
 }
 #header > div {
   grid-area: header;
   color: var(--off-white);
+  display: flex;
 }
 
 /* =============
@@ -457,6 +482,7 @@ footer > div {
 footer > div > ul {
   margin: 0;
   padding: 0;
+  padding-bottom: 40px;
   display: grid;
   gap: 24px;
 }
@@ -484,6 +510,9 @@ footer > div > ul li form {
 footer > div > ul li button {
   background-color: var(--green);
   color: var(--off-white);
+}
+footer > div > ul li aside {
+  display: flex;
 }
 @media (min-width: 768px) {
   footer > div > ul #f1 {
@@ -549,6 +578,9 @@ footer > div > ul li button {
   background-color: transparent;
   color: var(--off-white);
 }
+#banner > div h1 {
+  padding-bottom: 10px;
+}
 
 /* =============
     Cards
@@ -569,7 +601,6 @@ footer > div > ul li button {
 #cards > div ul {
   margin: 0;
   padding: 0;
-  padding-bottom: 24px;
   display: grid;
   gap: 24px;
 }
@@ -587,11 +618,16 @@ footer > div > ul li button {
 }
 #cards > div ul li {
   list-style: none;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 0px;
+  padding-bottom: 16px;
   text-align: center;
   background-color: var(--red);
   color: var(--off-white);
+}
+@media (min-width: 768px) {
+  #cards > div ul li {
+    padding-bottom: 24px;
+  }
 }
 #cards > div ul li button {
   background-color: var(--green);
@@ -621,6 +657,9 @@ footer > div > ul li button {
   #cards > div ul #c5 {
     grid-area: c5;
   }
+}
+#cards > div ul p {
+  padding: 32px;
 }
 
 /* =============
@@ -663,6 +702,9 @@ footer > div > ul li button {
 #middle-black-cards > div ul li button {
   background-color: var(--green);
   color: var(--off-white);
+}
+#middle-black-cards > div ul p {
+  padding: 16px;
 }
 
 /* =============

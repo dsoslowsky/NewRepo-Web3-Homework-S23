@@ -494,9 +494,11 @@ footer > div > ul li {
   display: grid;
   grid-template-columns: 50% auto;
   background-color: var(--dark-green);
+  color: var(--off-white);
 }
 #banner > div ul li button {
   background-color: transparent;
+  color: var(--off-white);
 }
 
 /* =============

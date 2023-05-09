@@ -698,3 +698,6 @@ footer > div > ul li button {
   grid-area: search-bar;
   color: var(--off-black);
 }
+#search-bar > div button {
+  background-color: var(--green);
+}

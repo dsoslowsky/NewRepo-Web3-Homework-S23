@@ -396,10 +396,10 @@ textarea {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
+  background-color: var(--off-black);
 }
 #header > div {
   grid-area: header;
-  background-color: var(--off-black);
   color: var(--off-white);
 }
 

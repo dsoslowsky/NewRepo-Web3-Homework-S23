@@ -703,8 +703,7 @@ footer > div > ul li aside {
 }
 #middle-black-cards > div ul li {
   list-style: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0px;
   text-align: center;
   display: grid;
   grid-template-columns: 50% auto;

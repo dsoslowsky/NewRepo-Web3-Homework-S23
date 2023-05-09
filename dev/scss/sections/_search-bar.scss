@@ -7,6 +7,12 @@
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". search-bar .";
 
+    padding: 16px 0px;
+
+    @include md{
+        padding: 24px 0px;
+    }
+
     @include xxl{
         grid-template-columns: auto 1200px auto;
     }

@@ -362,9 +362,18 @@ body {
   background-color: var(--green);
 }
 
+.content-spacing {
+  padding-top: 24px;
+}
+
 /* =============
     Typography
 ============= */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
@@ -697,6 +706,7 @@ footer > div > ul li button {
 #search-bar > div {
   grid-area: search-bar;
   color: var(--off-black);
+  border-bottom: 1px solid var(--green);
 }
 #search-bar > div button {
   background-color: var(--green);

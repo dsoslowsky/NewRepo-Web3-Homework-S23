@@ -9,10 +9,13 @@
 
     >div{
         grid-area: search-bar;
+
         color: var(--off-black);
 
         button{
             background-color: var(--green);
         }
+
+        border-bottom: 1px solid var(--green);
     }
 }

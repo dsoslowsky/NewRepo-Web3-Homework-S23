@@ -7,15 +7,36 @@
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". search-bar .";
 
+    @include xxl{
+        grid-template-columns: auto 1200px auto;
+    }
+
     >div{
         grid-area: search-bar;
 
         color: var(--off-black);
 
-        button{
-            background-color: var(--green);
+        form{
+            display: flex;
+
+            input{
+                background-color: var(--off-white);
+                border: none;
+                border-bottom: 1px solid var(--green);
+                width: 100%;
+                border-radius: 0px;
+                margin-right: 8px;
+            }
         }
 
-        border-bottom: 1px solid var(--green);
+
+        button{
+            border: none;
+            background-color: var(--green);
+            border-radius: 5px;
+            padding: 10px 16px;
+        }
+
+
     }
 }

@@ -502,6 +502,7 @@ footer > div > ul li {
 }
 footer > div > ul li form {
   display: flex;
+  padding-bottom: 16px;
 }
 footer > div > ul li form input {
   background-color: var(--red);

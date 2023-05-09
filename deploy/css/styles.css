@@ -501,8 +501,25 @@ footer > div > ul li {
   list-style-type: none;
 }
 footer > div > ul li form {
+  display: flex;
+}
+footer > div > ul li form input {
   background-color: var(--red);
   color: var(--off-white);
+  border: none;
+  width: 100%;
+  margin-right: 8px;
+  padding: 16px 0px;
+}
+@media (min-width: 768px) {
+  footer > div > ul li form input {
+    padding: 24px 0px;
+  }
+}
+@media (min-width: 1440px) {
+  footer > div > ul li form input {
+    grid-template-columns: auto 1200px auto;
+  }
 }
 footer > div > ul li button {
   background-color: var(--green);
@@ -643,10 +660,6 @@ footer > div > ul li aside {
   #cards > div ul li {
     padding-bottom: 24px;
   }
-}
-#cards > div ul li button {
-  background-color: var(--green);
-  color: var(--off-white);
 }
 @media (min-width: 768px) {
   #cards > div ul #c1 {

@@ -514,6 +514,7 @@ footer > div > ul li form {
 footer > div > ul li button {
   background-color: var(--green);
   color: var(--off-white);
+  margin: 4px 12px;
 }
 footer > div > ul li aside {
   display: flex;
@@ -714,6 +715,7 @@ footer > div > ul li aside {
 #middle-black-cards > div ul li button {
   background-color: var(--green);
   color: var(--off-white);
+  margin: 4px 12px;
 }
 #middle-black-cards > div ul p {
   padding: 16px;

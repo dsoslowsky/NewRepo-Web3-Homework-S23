@@ -399,12 +399,16 @@ textarea {
 }
 #header > div {
   grid-area: header;
+  background-color: var(--off-black);
+  color: var(--off-white);
 }
 
 /* =============
     Footer
 ============= */
 footer {
+  background-color: var(--off-black);
+  color: var(--off-white);
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
@@ -439,6 +443,10 @@ footer > div > ul {
 }
 footer > div > ul li {
   list-style-type: none;
+}
+footer > div > ul li form button {
+  background-color: var(--green);
+  color: var(--off-white);
 }
 @media (min-width: 768px) {
   footer > div > ul #f1 {

@@ -3,6 +3,9 @@
 ============= */
 
 footer{
+    background-color: var(--off-black);
+    color: var(--off-white);
+
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
@@ -41,7 +44,13 @@ footer{
 
         li{
             list-style-type: none;
-            
+
+            form{
+                button{
+                    background-color: var(--green);
+                    color: var(--off-white);
+                }
+            }
         }
     
         #f1{

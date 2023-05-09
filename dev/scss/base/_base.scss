@@ -46,19 +46,16 @@ button{
     }
 
 
-.content-spacing{
-    padding-top: 24px;
+.content-spacing-top{
+    padding-top: 16px;
 
     @include md{
-        padding-top: 40px;
+        padding-top: 24px;
     }
 
     @include lg{
-        padding-top: 56px;
+        padding-top: 30px;
     }
 
-    @include xxl{
-        padding-top: 64px;
-    }
 }
 

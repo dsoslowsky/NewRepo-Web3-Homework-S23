@@ -380,22 +380,17 @@ button {
   }
 }
 
-.content-spacing {
-  padding-top: 24px;
+.content-spacing-top {
+  padding-top: 16px;
 }
 @media (min-width: 768px) {
-  .content-spacing {
-    padding-top: 40px;
+  .content-spacing-top {
+    padding-top: 24px;
   }
 }
 @media (min-width: 1024px) {
-  .content-spacing {
-    padding-top: 56px;
-  }
-}
-@media (min-width: 1440px) {
-  .content-spacing {
-    padding-top: 64px;
+  .content-spacing-top {
+    padding-top: 30px;
   }
 }
 

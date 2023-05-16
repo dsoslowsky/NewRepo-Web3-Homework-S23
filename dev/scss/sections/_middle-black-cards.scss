@@ -43,6 +43,30 @@
 
                 background-color: var(--off-black);
                 color: var(--off-white);
+
+
+                aside{
+
+                        #middle-black-cards-bg-img-1{
+                            background-image: url("../img/main-lamp-photos/lamp-circle-1.svg");
+                            background-position: center;
+                            background-size: cover;
+                            width: 50%;
+                            padding-bottom: 50%;
+                            border-radius: 100%;
+                        }
+
+                        #middle-black-cards-bg-img-2{
+                            background-image: url("../img/main-lamp-photos/lamp-circle-2.svg");
+                            background-position: center;
+                            background-size: cover;
+                            width: 50%;
+                            padding-bottom: 50%;
+                            border-radius: 100%;
+                        }
+
+                    }
+                }
             }
 
             p{
@@ -50,4 +74,4 @@
             }
         }
     }
-}
+

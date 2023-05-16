@@ -549,9 +549,32 @@ footer > div > ul li aside {
 /* =============
     Hero
 ============= */
+#hero {
+  background-image: url("../img/main-lamp-photos/hero-image.svg");
+  background-size: cover;
+  height: 370px;
+}
 #hero img {
   font-size: 0px;
   display: block;
+}
+@media (min-width: 768px) {
+  #hero {
+    height: 570px;
+    background-position: center;
+  }
+}
+@media (min-width: 1200px) {
+  #hero {
+    height: 770px;
+    background-position: center;
+  }
+}
+@media (min-width: 1440px) {
+  #hero {
+    height: 870px;
+    background-position: center;
+  }
 }
 
 /* =============
@@ -775,6 +798,8 @@ footer > div > ul li aside {
 }
 #middle-images > div ul li img {
   width: 100%;
+  font-size: 0px;
+  display: block;
 }
 @media (min-width: 768px) {
   #middle-images > div ul #i1 {

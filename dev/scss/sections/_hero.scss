@@ -7,5 +7,25 @@
         font-size: 0px;
         display: block;
     }
+
+    background-image: url("../img/main-lamp-photos/hero-image.svg");
+    background-size: cover;
+    height: 370px;
+
+    @include md{
+        height: 570px;
+        background-position: center;
+    }
+
+    @include xl{
+        height: 770px;
+        background-position: center;
+    }
+    
+    @include xxl{
+        height: 870px;
+        background-position: center;
+    }
+
  
 }

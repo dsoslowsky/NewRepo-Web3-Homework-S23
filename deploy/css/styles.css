@@ -393,6 +393,10 @@ ul li {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
@@ -456,6 +460,29 @@ textarea {
   grid-area: header;
   color: var(--off-white);
   display: flex;
+}
+#header > div img {
+  padding-right: 16px;
+}
+#header h1 {
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 1.75rem;
+}
+@media (min-width: 1024px) {
+  #header h1 {
+    font-size: 2rem;
+  }
+}
+#header p {
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 0.75rem;
+}
+@media (min-width: 1024px) {
+  #header p {
+    font-size: 0.875rem;
+  }
 }
 
 /* =============
@@ -855,6 +882,9 @@ footer > div > ul li aside {
 #search-bar > div {
   grid-area: search-bar;
   color: var(--off-black);
+  font-weight: 300;
+  line-height: 32px;
+  font-size: 1.875rem;
 }
 #search-bar > div form {
   display: flex;
@@ -872,4 +902,9 @@ footer > div > ul li aside {
   background-color: var(--green);
   border-radius: 5px;
   padding: 10px 16px;
+}
+@media (min-width: 1024px) {
+  #search-bar > div {
+    font-size: 2.125rem;
+  }
 }

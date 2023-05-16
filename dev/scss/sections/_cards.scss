@@ -83,8 +83,17 @@
             }
 
 
+            h1{
+                font-weight: 600;
+                line-height: 32px;
+                font-size: rem-calc(27);
+            }
+        
             p{
                 padding: 32px;
+                font-weight: 400;
+                line-height: 20px;
+                font-size: rem-calc(16);
             }
         }
         

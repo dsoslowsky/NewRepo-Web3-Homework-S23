@@ -71,6 +71,13 @@
 
             p{
                 padding: 16px;
+                font-weight: 400;
+                line-height: 32px;
+                font-size: rem-calc(22);
+        
+                @include lg{
+                    font-size: rem-calc(30);
+                }
             }
         }
     }

@@ -1,22 +1,23 @@
 /* =============
     Navigation
 ============= */
+html{
+    scroll-behavior: smooth;
+}
 
+
+.show-menu{
+    display: block !important;
+}
 
 nav{
 
-
+    // display: none;
 
     ul{
-
-        // @include lg{
-        //     display: block;
-        // }
         list-style: none;
-
         li{
             text-align: right;
-
             a:link, a:visited{
                 display: inline-block;
                 color: var(--off-white);

@@ -3,6 +3,10 @@
 ============= */
 
 #middle-images{
+
+    scroll-margin-top: 100px;
+
+
     display: grid;
     grid-template-columns: 0px auto 0px;
     grid-template-areas: ". middle-images .";

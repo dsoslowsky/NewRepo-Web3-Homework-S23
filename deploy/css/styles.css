@@ -444,6 +444,14 @@ textarea {
 /* =============
     Navigation
 ============= */
+html {
+  scroll-behavior: smooth;
+}
+
+.show-menu {
+  display: block !important;
+}
+
 nav ul {
   list-style: none;
 }
@@ -723,6 +731,7 @@ footer > div > ul p {
     Cards
 ============= */
 #cards {
+  scroll-margin-top: 190px;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". cards .";
@@ -885,6 +894,7 @@ footer > div > ul p {
     Middle Images
 ============= */
 #middle-images {
+  scroll-margin-top: 100px;
   display: grid;
   grid-template-columns: 0px auto 0px;
   grid-template-areas: ". middle-images .";

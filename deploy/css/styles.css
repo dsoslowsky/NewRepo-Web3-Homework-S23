@@ -452,17 +452,50 @@ html {
   display: block !important;
 }
 
+@media (min-width: 1024px) {
+  nav {
+    display: block;
+  }
+}
 nav ul {
   list-style: none;
 }
+@media (min-width: 1024px) {
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
 nav ul li {
   text-align: right;
+}
+@media (min-width: 1024px) {
+  nav ul li {
+    margin-left: 16px;
+  }
 }
 nav ul li a:link, nav ul li a:visited {
   display: inline-block;
   color: var(--off-white);
   padding: 16px 0 16px;
   font-weight: 600;
+}
+@media (min-width: 1024px) {
+  nav ul li a:link, nav ul li a:visited {
+    padding: 24px 36px;
+    border: 1px solid var(--off-white);
+    color: var(--off-white);
+    border-radius: 6px;
+    transition: 0.25s;
+  }
+}
+@media (min-width: 1024px) {
+  nav ul li:hover, nav ul li:active {
+    border: none;
+    background-color: var(--red);
+    color: var(--off-white);
+  }
 }
 
 /* =============
@@ -480,6 +513,11 @@ nav ul li a:link, nav ul li a:visited {
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
 }
+@media (min-width: 1024px) {
+  #header > div {
+    grid-template-areas: "logo nav";
+  }
+}
 #header > div #logo {
   grid-area: logo;
   display: flex;
@@ -490,6 +528,11 @@ nav ul li a:link, nav ul li a:visited {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+@media (min-width: 1024px) {
+  #header > div #burger {
+    display: none;
+  }
 }
 #header > div #burger button {
   border: none;
@@ -976,6 +1019,7 @@ footer > div > ul p {
 }
 #search-bar > div form {
   display: flex;
+  margin-top: 90px;
 }
 #search-bar > div form input {
   background-color: var(--off-white);

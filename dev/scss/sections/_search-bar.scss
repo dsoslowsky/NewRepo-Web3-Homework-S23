@@ -3,11 +3,15 @@
 ============= */
 
 #search-bar{
+
+
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". search-bar .";
 
     padding: 16px 0px;
+
+    
 
     @include md{
         padding: 24px 0px;
@@ -24,6 +28,7 @@
 
         form{
             display: flex;
+            margin-top: 90px;
 
             input{
                 background-color: var(--off-white);

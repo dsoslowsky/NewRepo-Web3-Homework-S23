@@ -14,29 +14,51 @@ nav{
 
     // display: none;
 
+    @include lg{
+        display: block;
+    }
+
     ul{
         list-style: none;
+
+        @include lg{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
         li{
             text-align: right;
+            @include lg{
+                margin-left: 16px;
+            }
+
+
             a:link, a:visited{
                 display: inline-block;
                 color: var(--off-white);
                 padding: 16px 0 16px;
                 font-weight: 600;
+
+                @include lg{
+                    padding: 24px 36px;
+                    border: 1px solid var(--off-white);
+                    color: var(--off-white);
+                    border-radius: 6px;
+                    transition: 0.25s;
+                }
+            }
+
+            &:hover, &:active{
+                @include lg{
+                    border: none;
+                    background-color: var(--red);
+                    color: var(--off-white);
+                }    
+            }
    
 
-
-                // padding: 24px 36px;
-                // border: 1px solid var(--off-white);
-                // color: var(--off-white);
-                // border-radius: 6px;
-                // transition: 0.25s;
-                
-                // &:hover, &:active{
-                //     border: var(--red);
-                //     color: var(--red);
-                // }
-            }
+            
         }
     }
 }

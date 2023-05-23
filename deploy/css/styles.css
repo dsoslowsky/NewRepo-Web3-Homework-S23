@@ -418,6 +418,11 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 1rem;
 }
 
+button {
+  padding: 0;
+  margin: 0;
+}
+
 /* =============
     Forms
 ============= */
@@ -439,33 +444,53 @@ textarea {
 /* =============
     Navigation
 ============= */
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  text-align: right;
+}
+nav ul li a:link, nav ul li a:visited {
+  display: inline-block;
+  color: var(--off-white);
+  padding: 16px 0 16px;
+  font-weight: 600;
+}
+
 /* =============
     Header
 ============= */
-#header {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header .";
-  background-color: var(--off-black);
-  padding: 20px 24px;
-}
-@media (min-width: 768px) {
-  #header {
-    padding: 24px 24px;
-  }
-}
-@media (min-width: 1024px) {
-  #header {
-    padding: 24px 48px;
-  }
-}
 #header > div {
-  grid-area: header;
+  background-color: var(--off-black);
   color: var(--off-white);
-  display: flex;
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-areas: "logo burger" "nav nav";
+  padding: 16px;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
 }
-#header > div img {
-  padding-right: 16px;
+#header > div #logo {
+  grid-area: logo;
+  display: flex;
+  align-items: center;
+}
+#header > div #burger {
+  grid-area: burger;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#header > div #burger button {
+  border: none;
+  background-color: transparent;
+  color: var(--off-white);
+  font-size: ren-calc(20);
+}
+#header > div nav {
+  grid-area: nav;
 }
 #header h1 {
   font-weight: 400;

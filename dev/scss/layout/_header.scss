@@ -3,34 +3,83 @@
 ============= */
 
 #header{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". header .";
 
-
-    background-color: var(--off-black);
-
-    padding: 20px 24px;
-
-    @include md{
-        padding: 24px 24px;
-    }
-
-    @include lg{
-        padding: 24px 48px;
-    }
-
+    
     >div{
-        grid-area: header;
+    background-color: var(--off-black);
+    color: var(--off-white);
 
-        color: var(--off-white);
 
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: 
+    "logo burger"
+    "nav nav";
+    padding: 16px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
+
+    #logo{
+        grid-area: logo;
         display: flex;
+        align-items: center;
+    }
 
-        img{
-            padding-right: 16px;
+    #burger{
+        grid-area: burger;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        button{
+            border: none;
+            background-color: transparent;
+            color: var(--off-white);
+            font-size: ren-calc(20);
         }
     }
+
+    nav{
+        grid-area: nav;
+    }
+
+}
+    
+  
+    // display: grid;
+    // grid-template-columns: 16px auto 16px;
+    // grid-template-areas: ". header .";
+
+
+
+    // padding: 20px 24px;
+
+    // @include md{
+    //     padding: 24px 24px;
+    // }
+
+    // @include lg{
+    //     padding: 24px 48px;
+    // }
+
+    // >div{
+    //     grid-area: header;
+
+    //     color: var(--off-white);
+
+    //     display: flex;
+
+    //     img{
+    //         padding-right: 16px;
+    //     }
+
+    //     button{
+    //         background-color: transparent;
+    //     }
+
+    // }
 
     h1{
         font-weight: 400;

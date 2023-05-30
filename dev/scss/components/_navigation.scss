@@ -12,7 +12,7 @@ html{
 
 nav{
 
-    // display: none;
+    display: none;
 
     @include lg{
         display: block;
@@ -39,7 +39,6 @@ nav{
                 color: var(--off-white);
                 padding: 16px 0 16px;
                 font-weight: 600;
-
                 @include lg{
                     padding: 24px 36px;
                     border: 1px solid var(--off-white);
@@ -47,14 +46,14 @@ nav{
                     border-radius: 6px;
                     transition: 0.25s;
                 }
-            }
 
-            &:hover, &:active{
-                @include lg{
-                    border: none;
-                    background-color: var(--red);
-                    color: var(--off-white);
-                }    
+                &:hover, &:active{
+                    @include lg{
+                        border: none;
+                        background-color: var(--red);
+                        color: var(--off-white);
+                    }   
+                }
             }
    
 
